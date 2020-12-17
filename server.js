@@ -9,6 +9,7 @@ require('dotenv').config()
 const app = express()
 const apiPort = 5000
 app.use(morgan('tiny'))
+app.use(express.static('assets'))
 
 const MONGODB_URI = process.env.ATLAS_URI
 mongoose.connect(MONGODB_URI || 'mongodb://localhost/my_brands', {
