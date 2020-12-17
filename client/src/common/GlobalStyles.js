@@ -38,3 +38,5 @@ const GlobalStyle = createGlobalStyle`
         color: #444;
     }
 `
+
+export default GlobalStyle
